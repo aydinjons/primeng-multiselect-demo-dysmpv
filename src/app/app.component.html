@@ -1,0 +1,36 @@
+<hr />
+<h5>Lisans Seçin</h5>
+<p-multiSelect
+  [options]="cities"
+  [(ngModel)]="selectedCities1"
+  defaultLabel="Select a City"
+  optionLabel="name"
+>
+</p-multiSelect>
+<hr />
+<h5>Lisans Kapsamı</h5>
+<p-dropdown
+  [options]="countries"
+  [(ngModel)]="selectedCities2"
+  defaultLabel="Select a City"
+  optionLabel="name"
+  display="chip"
+></p-dropdown>
+<hr />
+<h5>Kimler Lisanslanacak</h5>
+<p-dropdown
+  [options]="groups"
+  [(ngModel)]="selectedCities2"
+  defaultLabel="Select a City"
+  optionLabel="name"
+  display="chip"
+></p-dropdown>
+<hr />
+<h5>Belirli bir grup seçilirse</h5>
+<p-multiSelect
+  [options]="departments"
+  [(ngModel)]="selectedCities2"
+  defaultLabel="Select a City"
+  optionLabel="name"
+  display="chip"
+></p-multiSelect>
